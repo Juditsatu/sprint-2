@@ -3,9 +3,20 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 $primary:#5265E1;
 $secondary: #FA5959;
 
-.blue-background {
-    background-color: #5265E1
-}
+//Tabs
+$nav-link-padding-y:  1rem;
+$nav-link-padding-x: 2rem;
+$nav-tabs-link-active-border-color: none;
+$nav-tabs-border-color:  $primary;
+//$nav-tabs-border-width: none;
+$nav-link-font-weight: 500;
+$nav-tabs-link-hover-border-color: none;
 
+//Accordion
+$accordion-button-color: $primary;
+
+.blue-background {
+    background-color: $primary;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
