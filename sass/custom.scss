@@ -3,4 +3,9 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 $primary:#5265E1;
 $secondary: #FA5959;
 
+.blue-background {
+    background-color: #5265E1
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";

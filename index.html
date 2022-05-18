@@ -15,7 +15,7 @@
 
 <body>
   <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 mt-4">
       <img src="./images/logo-bookmark.svg">
       </a>
 
@@ -33,8 +33,8 @@
   </div>
   <main class="container">
     <!-- column 1 description -->
-    <div class="row">
-      <div class="col-12 col-md-6 p-5 border">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 p-5">
         <h1>A Simple Bookmark Manager</h1>
         <p class="text-muted">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load
           instantly. Try it for free.</p>
@@ -42,15 +42,94 @@
           <button type="button" class="btn btn-light shadow p-2 text-muted">Get it on Firefox</button>
       </div>
       <!-- column 2 image -->
-    <div class="col-12 col-md-6 border">
+    <div class="col-12 col-md-6">
       <img class="img-fluid" src="./images/illustration-hero.svg">
+      <div class="blue-background">.</div>
     </div>
     </div>
-    <div class="row">
-      <div class="col-12 border mx-auto">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 p-5 text-center">
         <h2>Features</h2>
         <p class="text-muted">Our aim is to make it quick and easy for you to access yoour favourite websites. Your bookmarks sync between your
           devices so you can access them on the go.</p>
+      </div>
+    </div>
+    <!-- TABS -->
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs justify-content-center" id="myTab">
+          <li class="nav-item"><a class="nav-link active" href="#bookmarking" data-toggle="tab">Simple Bookmarking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#searching" data-toggle="tab">Speedy Searching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sharing" data-toggle="tab">Easy Sharing</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="bookmarking">
+            <!-- column 1 image -->
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6 p-5">
+                <img class="img-fluid" src="./images/illustration-features-tab-1.svg">
+              </div>
+              <!-- column 2 text -->
+              <div class="col-12 col-md-6 p-5">
+                <h2>Bookmark in one click</h2>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how
+                  you
+                  manage your favoureite sites.</p>
+                <button type="button" class="btn btn-primary p-2">More info</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="searching">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita consectetur repellendus at cupiditate odio quis!
+            Mollitia eum dolorem odio eaque accusamus laboriosam corrupti voluptatum consequatur obcaecati expedita. Quas, nostrum?
+            </div>
+          <div class="tab-pane" id="Sharing">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae mollitia, nulla, deserunt repudiandae
+            reprehenderit quae nam sint dolore laudantium officia iste rerum reiciendis sapiente, excepturi blanditiis? Ratione,
+            recusandae animi! </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 p-5 text-center">
+          <h2>Download the extension</h2>
+          <p class="text-muted">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd
+            like us to prioritize.</p>
+        </div>
+      </div>
+      <!-- CARD 1 -->
+      <div class="col">
+        <div class="card p-3 align-items-center text-center shadow" style="width: 18rem;">
+          <img src="./images/logo-chrome.svg" class="img-fluid card-img-top w-50" alt="chrome">
+          <div class="card-body">
+            <h5 class="card-title">Add to Chrome</h5>
+            <p class="card-text text-muted">Minimum version 62</p>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="col mt-4">
+        <div class="card p-3 align-items-center text-center" style="width: 18rem;">
+          <img src="./images/logo-firefox.svg" class="img-fluid card-img-top w-50" alt="firefox">
+          <div class="card-body">
+            <h5 class="card-title">Add to Firefox</h5>
+            <p class="card-text text-muted">Minimum version 55</p>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+      <div class="col mt-5">
+        <div class="card p-3 align-items-center text-center" style="width: 18rem;">
+          <img src="./images/logo-opera.svg" class="img-fluid card-img-top w-50" alt="opera">
+          <div class="card-body">
+            <h5 class="card-title">Add to Opera</h5>
+            <p class="card-text text-muted">Minimum version 46</p>
+            <a href="#" class="btn btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
       </div>
     </div>
   </main>
