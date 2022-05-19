@@ -16,24 +16,32 @@
 
 <body>
   <!-- NAV -->
-  <div class="container">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 mt-4">
-      <img src="./images/logo-bookmark.svg">
-      </a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+  
+    <div class="container">
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#"><img src="./images/logo-bookmark.svg"></a>
+      <!-- menu responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-dark">FEATURES</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">PRICING</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">CONTACT</a></li>
-      </ul>
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-secondary text-white me-2">
-          Login
-        </button>
-      </div>
-    </header>
-  </div> <!-- NAV -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-3 mb-2 mb-lg-0">
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">FEATURES</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">PRICING</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">CONTACT</a></li>
+            <button type="button" class="btn btn-secondary text-white ">
+                Login
+            </button>
+          </ul>
+        </div>
+
+ 
+
+    </div> <!-- NAV -->
+  </nav>
   <main class="container">
     <!-- SIMPLE BOOKMARK... -->
     <!-- column 1 description -->
@@ -239,7 +247,7 @@
               <div class="form-outline col-auto">
                 <input type="email" id="form5Example27" class="form-control" placeholder="Enter your email address"/>
               </div>
-              <div class="col-auto">
+              <div class="col-auto mt-4">
                 <button type="submit" class="btn btn-secondary mb-3 text-light">
                   Contact us
                 </button>
