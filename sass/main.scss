@@ -3,16 +3,24 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 $primary:#5265E1;
 $secondary: #FA5959;
 
-#blue-background {
-    background-color: $primary;
-    width: 100%;
-    height: 22rem;
-    border-radius: 10rem;
-}
+#blue-background-right {
+  background-color: $primary;
+  width: 100%;
+  height: 15rem;
+  border-radius: 0 0 7rem 7rem;
+} 
+
+#blue-background-left {
+  background-color: $primary;
+  width: 100%;
+  height: 15rem;
+  border-radius: 0 0 7rem 7rem;
+} 
 
 $position-values: (
   0: 0,
   15: 15%,
+  20: 20%,
   30: 30%,
   50: 50%,
   60: 60%,
@@ -37,5 +45,33 @@ $accordion-button-color: $primary;
 //Footer
 $input-focus-width: .5rem;
 
+
+
+@media (min-width: 992px) {
+  #blue-background-right {
+    height: 22rem;
+    border-radius: 0 0 0 10rem;
+  }
+
+  #blue-background-left {
+    height: 22rem;
+    border-radius: 0 0 10rem 0;
+  }   
+
+  #bookmark {
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #bookmark {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
