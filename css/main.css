@@ -1,3 +1,8 @@
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #blue-background-right {
   background-color: #5265e1;
   width: 100%;
@@ -12,13 +17,13 @@
   border-radius: 0 0 7rem 0;
 }
 
-#btn-secondary::before {
-  color: white;
+.btn-secondary {
+  color: white !important;
 }
 
 #btn-secondary:hover {
   background-color: white;
-  color: #fa5959;
+  color: #fa5959 !important;
 }
 
 #btn-primary::before {
@@ -32,7 +37,6 @@
 
 hr.style-dotted {
   border-top: 0.4rem dotted #8c8b8b;
-  margin: 0;
 }
 
 .icon:hover path {
