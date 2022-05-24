@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js"></script>
   <script defer src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -267,17 +269,17 @@
             </p>
           </div>
         </div>
-        <form action="" class="was-validated">
+        <form action="" name="formEmail" class="needs-validation" onsubmit="validate()">
           <div class="row justify-content-center position-relative">
             <div class="col-12 col-md-4 form-group">
-              <input type="email" id="exampleInputEmail1" class="form-control" placeholder="Enter your email address"
+              <input type="email" name="email" id="exampleInputEmail1" class="form-control" placeholder="Enter your email address"
                 required />
               <div class="invalid-tooltip">
                 Whoops, make sure it's an email
               </div>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-secondary" id="btn-secondary">
+              <button type="submit" class="btn btn-secondary" id="btn-secondary" onclick="validate()">
                 Contact us
               </button>
             </div>
@@ -297,7 +299,7 @@
           <a href="#" class="text-light link-secondary text-decoration-none p-3">PRICING</a>
           <a href="#" class="text-light link-secondary text-decoration-none p-3">CONTACT</a>
         </div>
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-6">
           <!-- Facebook -->
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path fill="#FFF" fill-rule="evenodd"
@@ -314,7 +316,7 @@
       </div>
     </div>
   </footer>
-  
+ 
 </body>
 
 </html>
