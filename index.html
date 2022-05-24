@@ -31,9 +31,9 @@
 
         <div class="collapse navbar-collapse justify-content-end pt-3 ml-4" id="navbarSupportedContent">
           <ul class="navbar-nav mx-3 mb-2 mb-lg-0">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark link-secondary">FEATURES</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark link-secondary">PRICING</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark link-secondary">CONTACT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-4 text-dark link-secondary">FEATURES</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-4 text-dark link-secondary">PRICING</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-4 text-dark link-secondary">CONTACT</a></li>
           </ul>
           <button type="button" class="btn btn-secondary m-3 px-4 shadow-sm" id="btn-secondary">
               LOGIN
@@ -70,6 +70,7 @@
           </div>
         </div>
     </div>
+    
     <!-- FEATURES -->
     <div class="row justify-content-center">
       <div class="col-12 col-md-6 p-5 text-center">
@@ -106,7 +107,7 @@
                   control over how
                   you
                   manage your favoureite sites.</p>
-                <button type="button" class="btn btn-primary px-3" id="btn-primary">More info</button>
+                <button type="button" class="btn btn-primary px-3 shadow-sm" id="btn-primary">More info</button>
               </div>
             </div>
           </div>
@@ -124,6 +125,7 @@
         </div>
       </div>
     </div>
+
     <!-- DOWNLOAD EXTENSION -->
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 p-5 text-center">
@@ -252,7 +254,6 @@
     
       </div>
 
-
   </main>
   <!-- FOOTER -->
   <footer class="bg-primary text-center text-light">
@@ -278,13 +279,12 @@
                 Whoops, make sure it's an email
               </div>
             </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-secondary" id="btn-secondary" onclick="validate()">
-                Contact us
-              </button>
-            </div>
-            <!--Grid row-->
-        </form>
+          </form>
+          <div class="col-auto" id="submit-btn">
+            <button type="submit" class="btn btn-secondary" id="btn-secondary" onclick="validate()">
+              Contact us
+            </button>
+          </div>
       </section>
       <!-- Section: Form -->
     </div>
